@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.justtestapplicationfx.controller.FXMLDocumentController">
+   <children>
+      <LineChart fx:id="lineChart" layoutY="34.0" prefHeight="675.0" prefWidth="991.0" title="Statistic Coronavirus">
+        <xAxis>
+          <CategoryAxis label="Month" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" label="Cases" side="TOP" />
+        </yAxis>
+      </LineChart>
+      <Button fx:id="buildAllCasesButton" layoutX="1006.0" layoutY="102.0" mnemonicParsing="false" onAction="#btn" text="Build all cases" />
+      <Button fx:id="coefficientButton" layoutX="1012.0" layoutY="144.0" mnemonicParsing="false" onAction="#btn2" text="Coefficients" />
+      <MenuButton fx:id="setParametersButton" layoutX="1002.0" layoutY="212.0" mnemonicParsing="false" text="Set parameters" />
+   </children>
+</AnchorPane>
